@@ -597,6 +597,9 @@ hgroup h2 {
   font-size: 1.5rem;
   margin: 0.3rem 4rem;
 }
+.tarifas thead {
+  background-color: rgb(18, 196, 68);
+}
 @media screen and (max-width: 62rem) {
   .tarifas__th {
     padding: 4px;
