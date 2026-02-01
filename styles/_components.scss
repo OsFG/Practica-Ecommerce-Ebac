@@ -102,6 +102,10 @@
         margin: .3rem 4rem;
     }
 
+    thead{
+        background-color: rgb(18, 196, 68);
+    }
+
     &__th{
         @extend %th-td-padding;
 
