@@ -599,6 +599,7 @@ hgroup h2 {
 }
 .tarifas thead {
   background-color: rgb(18, 196, 68);
+  color: #ffffff;
 }
 @media screen and (max-width: 62rem) {
   .tarifas__th {
