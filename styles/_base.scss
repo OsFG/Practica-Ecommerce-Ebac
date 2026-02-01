@@ -1,0 +1,86 @@
+$body-background-color: #fffffffe;
+$second-color: #ffffff;
+
+$hover-color: #ffae18;
+$header-border-format: 3px ridge #cfcfcf;;
+$header-background-color: #c21d1d;
+
+$general-font-family: "Raleway", sans-serif;
+$hs-font-family: "Noto Serif", serif;
+
+$center-margin: 0 auto;
+
+$hover-color-regis: #51a0f4;
+
+
+/********* VARIABLES BOOSTRAP SCSS ************/
+
+// _buttons.vars.scss
+$btn-secondary-text: $second-color;
+$btn-secondary-bg: none;
+$btn-secondary-border: none;
+$btn-secondary-hover-bg: none;
+$btn-secondary-hover-border: none;
+$btn-secondary-active-bg: none;
+$btn-secondary-active-border: $second-color;
+$btn-secondary-disabled-bg: #6c757d;
+
+$btn-font-family: $general-font-family;
+
+$btn-padding-x: none;
+$btn-padding-y: none;
+
+
+/* ******************************************* */
+
+@mixin general-font-format($f-weight){
+    text-align: center;
+    font-family: $hs-font-family;
+    font-optical-sizing: auto;
+    font-weight: $f-weight;
+    font-style: italic;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+@mixin header-footer-flex-format{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+@mixin header-format{
+    height: 7.8rem;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    box-sizing: border-box;
+    
+    border: 3px ridge #cfcfcf;
+    border-radius: 10px;
+
+    background-color: $header-background-color;
+}
+
+
+@mixin grid-items-format($g-column, $g-row){
+    grid-column: $g-column;
+    grid-row: $g-row;
+}
+
+%th-td-padding{
+    padding: 12px;
+}
+
+
+/* --------- MEDIA QUERIES ------------ */
+@mixin screen70REM{
+    @media screen and (max-width: 70rem){  @content;  }
+}
+
+@mixin screen62REM{
+    @media screen and (max-width: 62rem){  @content;  }
+}
+
+@mixin screen29REM{
+    @media screen and (max-width: 29rem){  @content;  }
+}

@@ -1,0 +1,155 @@
+.header__a{
+    margin: 0 .1%;
+    text-decoration: none;
+    color: $second-color;
+}
+
+.header__a--regis{
+    color: $hover-color;
+    font-weight: 800;
+}
+
+
+// Botón dropdown "Productos" nav
+// _buttons.overrides.scss
+.btn-secondary {
+  --bs-btn-bg: #{$btn-secondary-bg};
+  --bs-btn-border-color: #{$btn-secondary-border};
+
+  --bs-btn-hover-color: #{$btn-secondary-text};
+  --bs-btn-hover-bg: #{$btn-secondary-hover-bg};
+  --bs-btn-hover-border-color: #{$btn-secondary-hover-border};
+
+  --bs-btn-active-color: #{$btn-secondary-text};
+  --bs-btn-active-bg: #{$btn-secondary-active-bg};
+  --bs-btn-active-border-color: #{$btn-secondary-active-border};
+
+  --bs-btn-disabled-color: #{$btn-secondary-text};
+  --bs-btn-disabled-bg: #{$btn-secondary-disabled-bg};
+  --bs-btn-disabled-border-color: #{$btn-secondary-disabled-bg};
+  
+  --bs-btn-padding-x: $btn-padding-x; 
+  --bs-btn-padding-y: $btn-padding-y;
+
+
+  font-family: $btn-font-family;
+  font-size: clamp(0.9rem, 3vw, 1.5rem);
+    font-weight: 600;
+    font-style: oblique;
+
+    p{
+        display: inline;
+    }
+}
+
+
+/* ----------------------------  */
+.art1{
+    &__imgs{
+        .art1__img{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+
+/* ---------------------------- */
+.arts-productos{
+     &__img{
+        width: 100%;
+    }
+
+    .productos__ul{
+        font-size: 24px;
+        > li{
+            font-weight: 300;
+        }
+    }
+}
+
+
+/* ---------------COMUNIDAD CALL------------------    */
+.sctn-comunidad{
+     &__li{
+        font-size: 1.5rem;
+        margin-bottom: .3rem;
+        margin-left: 1rem;
+    }
+
+    &__li:last-child{
+        font-weight: 600;
+    }
+}
+
+
+/* --------------- TARIFAS ------------------    */
+.tarifas{
+    &__table{
+        width: 66%;
+        margin: $center-margin;
+        
+        border-collapse: initial;
+        border-spacing: 2px;
+
+        @include screen62REM{
+            width: 90%;
+        }
+    }
+
+    &__caption{
+        font-size: 1.5rem;
+    }
+
+    &__th{
+        @extend %th-td-padding;
+
+        @include screen62REM{
+            padding: 4px;
+        }
+    }
+
+    &__td{
+        @extend %th-td-padding;
+
+        @include screen62REM{
+            padding: 4px;
+        }
+    }
+}
+
+
+/*   ---------------  FOOTER ------------------    */
+.ftr-sections{
+    .footer__ul{
+        @include screen62REM{
+            padding: 0 1rem;
+        }
+    }
+
+    .footer__li{
+        font-size: 1rem;
+        margin-top: .5rem;
+
+        @include screen62REM{
+            font-size: .8rem;
+            margin-top: .5rem;
+        }
+    }
+
+    .footer__a{
+        font-size: .8rem;
+    }
+
+    .footer__p{
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+
+        @include screen62REM{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+
+            font-size: .8rem;
+        }
+    }
+}
