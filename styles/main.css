@@ -595,6 +595,7 @@ hgroup h2 {
 }
 .tarifas__caption {
   font-size: 1.5rem;
+  margin: 0.3rem 4rem;
 }
 @media screen and (max-width: 62rem) {
   .tarifas__th {
